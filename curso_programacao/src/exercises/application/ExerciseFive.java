@@ -33,11 +33,13 @@ public class ExerciseFive {
 
         System.out.printf("Welcome to bank %s%nAccount Number: %s%n", customerName, account.getAccountNumber());
 
+        System.out.println();
         System.out.println("Do you want to make a deposit? (S/N)");
         char choosedOptionDeposit = income.next().charAt(0);
 
         deposit(income, account, choosedOptionDeposit);
 
+        System.out.println();
         System.out.println("Do you want to make a withdrawal? (S/N)");
         char choosedOptionWitdrawal = income.next().charAt(0);
 

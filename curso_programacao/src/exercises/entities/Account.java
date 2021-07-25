@@ -47,7 +47,7 @@ public class Account {
     public void deposit(double value) {
         this.balance += value;
 
-        System.out.printf("Deposit made from: R$ %.2f%n", value);
+        System.out.printf("%nDeposit made from: R$ %.2f%n", value);
         System.out.printf("Current balance: R$ %.2f%n", this.balance);
         System.out.println();
     }
@@ -58,7 +58,7 @@ public class Account {
             this.balance -= value;
             this.taxBywithdrawal();
 
-            System.out.printf("%nWithdrawal made from: R$ %.2f%n + rate of: R$ " + TAX_BY_WITHDRAWAL, value);
+            System.out.printf("%nWithdrawal made from: R$ %.2f + rate of: R$ %.2f", value, TAX_BY_WITHDRAWAL);
             System.out.printf("%nCurrent balance: R$ %.2f%n", this.balance);
             System.out.println();
         } else {
