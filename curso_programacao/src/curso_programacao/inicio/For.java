@@ -1,19 +1,17 @@
-package curso_programacao;
+package curso_programacao.inicio;
 
 import java.util.Scanner;
 
-public class For 
-{
-	public static void main(String[] args)
-	{
+public class For {
+	public static void main(String[] args) {
 		Scanner income = new Scanner(System.in);
-		
+
 		int number = income.nextInt();
-		
-		for (int i=0; i <= number; i++) {
+
+		for (int i = 0; i <= number; i++) {
 			System.out.println("index: " + i);
 		}
-		
+
 		income.close();
 	}
 }

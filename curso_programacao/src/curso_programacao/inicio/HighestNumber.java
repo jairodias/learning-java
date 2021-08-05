@@ -1,34 +1,34 @@
-package curso_programacao;
+package curso_programacao.inicio;
 
 import java.util.Scanner;
 
 public class HighestNumber {
-	
+
 	public static void main(String[] args) {
 		Scanner income = new Scanner(System.in);
-			
-		System.out.print("Digite os três números para avaliação: ");
+
+		System.out.print("Digite os trï¿½s nï¿½meros para avaliaï¿½ï¿½o: ");
 		double numberOne = income.nextDouble();
 		double numberTwo = income.nextDouble();
 		double numberThree = income.nextDouble();
-		
+
 		double higher = max(numberOne, numberTwo, numberThree);
-		
+
 		show(higher);
-		
+
 		income.close();
 	}
-	
+
 	public static double max(double numberOne, double numberTwo, double numberThree) {
-		if(numberOne > numberTwo && numberOne > numberThree)
+		if (numberOne > numberTwo && numberOne > numberThree)
 			return numberOne;
 		else if (numberTwo > numberOne && numberTwo > numberThree)
 			return numberTwo;
-		else 
+		else
 			return numberThree;
 	}
-	
+
 	public static void show(double higher) {
-		System.out.print("O maior número digitado: " + higher);
+		System.out.print("O maior nï¿½mero digitado: " + higher);
 	}
 }

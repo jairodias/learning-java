@@ -1,4 +1,4 @@
-package curso_programacao;
+package curso_programacao.inicio;
 
 import java.util.ArrayList;
 import java.util.List;

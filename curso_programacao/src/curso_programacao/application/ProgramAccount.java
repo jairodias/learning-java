@@ -1,4 +1,4 @@
-package application;
+package curso_programacao.application;
 
 import entities.Account;
 import entities.BusinessAccount;
